@@ -1,0 +1,49 @@
+@import url('bulma.css');
+@import url('delta.css');
+@import url('fontawesome.min.css');
+
+
+@font-face {
+	font-family: 'minecraftfont';
+	src: url('./minecraftfont.eot');
+	src: local('minecraftfont'), url('./minecraftfont.woff') format('woff'), url('./minecraftfont.ttf') format('truetype');
+}
+
+::selection {
+    background-image: linear-gradient(to right, #81D4FA 0%, #E1F5FE 100%);
+    background-color: #81D4FA;
+    color: #0A0D16;
+}
+
+html {
+	font-family: 'minecraftfont' !important;
+    font-size: 12px;
+    background-color: #262833;
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 0.2rem;
+    font-weight: 200;
+
+    color: #F4F4F4 !important;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+.hero.is-banner {
+    background-image: url(../assets/newbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title,
+.subtitle,
+p {
+    text-shadow: black 1px 1px;
+	font-family: 'minecraftfont' !important;
+    color: #F4F4F4 !important;
+}
