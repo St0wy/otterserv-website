@@ -1,6 +1,7 @@
 @import url('bulma.css');
 @import url('delta.css');
 @import url('fontawesome.min.css');
+@import url('balloon.min.css');
 
 
 @font-face {
@@ -40,10 +41,65 @@ body {
     background-position: center;
 }
 
+strong{
+    color: #F4F4F4;
+}
+
 .title,
-.subtitle,
-p {
-    text-shadow: black 1px 1px;
+.subtitle{
+    text-shadow: #050607 2px 2px;
 	font-family: 'minecraftfont' !important;
     color: #F4F4F4 !important;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,225px);
+    justify-content: space-between;
+    grid-gap: 5px;
+}
+
+.event{ 
+    background-color: #313342;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2.5px;
+}
+
+.player{
+    line-height: 16px;
+    background-color: #313342;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.origin{
+    background-color: #313342;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2.5px;
+    margin-bottom: 10px;
+}
+
+.origin span{
+    display: flex;
+    align-items: center;
+}
+
+.origin .title{
+    margin-left: 10px;
+}
+
+hr{
+    margin-bottom: 50px;
+    background-color: #313342;
+}
+
+li.bad{
+    color: hsl(348, 100%, 61%);
+}
+
+li.good{
+    color: hsl(171, 100%, 41%);
 }
