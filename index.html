@@ -56,7 +56,7 @@
                         </span>
                         </div>
                         <span v-if="player.logged">
-                            <p>Temps de jeu : {{player.data.stats.minecraft_custom.minecraft_play_time}}</p>
+                            <p>Temps de jeu : {{tick(player.data.stats.minecraft_custom.minecraft_play_time)}}</p>
                             <p>Nombre de morts : {{player.data.stats.minecraft_custom.minecraft_deaths}}</p>
                         </span>
                     </div>
@@ -427,8 +427,7 @@
 
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script></html>
