@@ -52,13 +52,6 @@ strong{
     color: #F4F4F4 !important;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,225px);
-    justify-content: space-between;
-    grid-gap: 5px;
-}
-
 .event{ 
     background-color: #313342;
     padding: 5px 10px 5px 10px;
@@ -66,6 +59,7 @@ strong{
 }
 
 .player{
+    width: 100%;
     line-height: 16px;
     background-color: #313342;
     padding: 5px 10px 5px 10px;
@@ -92,7 +86,6 @@ strong{
 }
 
 hr{
-    margin-bottom: 50px;
     background-color: #313342;
 }
 

@@ -28,67 +28,82 @@
             <p class="title tt-low t-n">otter smp</p>
         </div>
     </section>
-    <section class="section">
+    <section class="section" id="view">
         <div class="container dm-b">
             <div class="event">
-            <p class="title t-n is-5">Prochain evenement :</p>
+                <p class="title t-n is-5">Prochain evenement</p>
                 <p>Lancement du serveur mercredi 21 septembre à <strong>21h</strong>!</p>
             </div>
             <hr>
-            <p class="title t-n is-5">Liste des joueurs :</p>
-            <div class="grid">
-                <div class="player">
-                    <p>Exylo</p>
-                    <span aria-label="Apian Lumberjack" data-balloon-pos="down">
-                    <img src="assets/icons/honeycomb.png">
-                    <img src="assets/icons/iron_axe.png">
-                    </span>
+            <p class="title t-n is-5 c" @click="players = !players"><span v-if="players">-</span><span v-else>+</span> Liste des joueurs</p>
+            <div class="columns is-multiline" v-if="players">
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>Exylo</p>
+                        <span aria-label="Apian Lumberjack" data-balloon-pos="down">
+                            <img src="assets/icons/honeycomb.png">
+                            <img src="assets/icons/iron_axe.png">
+                        </span>
+                    </div>
                 </div>
-                <div class="player">
-                    <p>Stowy_</p>
-                    <span aria-label="Wolf Blacksmith" data-balloon-pos="down">
-                    <img src="assets/icons/bone.png">
-                    <img src="assets/icons/iron_ingot.png">
-                    </span>
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>Stowy_</p>
+                        <span aria-label="Wolf Blacksmith" data-balloon-pos="down">
+                            <img src="assets/icons/bone.png">
+                            <img src="assets/icons/iron_ingot.png">
+                        </span>
+                    </div>
                 </div>
-                <div class="player">
-                    <p>MoiLePseudo</p>
-                    <span aria-label="Avian Fisherman" data-balloon-pos="down">
-                    <img src="assets/icons/feather.png">
-                    <img src="assets/icons/fishing_rod.png">
-                    </span>
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>MoiLePseudo</p>
+                        <span aria-label="Avian Fisherman" data-balloon-pos="down">
+                            <img src="assets/icons/feather.png">
+                            <img src="assets/icons/fishing_rod.png">
+                        </span>
+                    </div>
                 </div>
-                <div class="player">
-                    <p>Roxaasora</p>
-                    <span aria-label="Elytrian Cook" data-balloon-pos="down">
-                    <img src="assets/icons/elytra.png">
-                    <img src="assets/icons/suspicious_stew.png">
-                    </span>
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>Roxaasora</p>
+                        <span aria-label="Elytrian Cook" data-balloon-pos="down">
+                            <img src="assets/icons/elytra.png">
+                            <img src="assets/icons/suspicious_stew.png">
+                        </span>
+                    </div>
                 </div>
-                <div class="player">
-                    <p>Swordyn</p>
-                    <span aria-label="Enderian Merchant" data-balloon-pos="down">
-                    <img src="assets/icons/ender_pearl.png">
-                    <img src="assets/icons/emerald.png">
-                    </span>
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>Swordyn</p>
+                        <span aria-label="Enderian Merchant" data-balloon-pos="down">
+                            <img src="assets/icons/ender_pearl.png">
+                            <img src="assets/icons/emerald.png">
+                        </span>
+                    </div>
                 </div>
-                <div class="player">
-                    <p>Krakao76</p>
-                    <span aria-label="Merling Fisherman" data-balloon-pos="down">
-                    <img src="assets/icons/cod.png">
-                    <img src="assets/icons/fishing_rod.png">
-                    </span>
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>Krakao76</p>
+                        <span aria-label="Merling Fisherman" data-balloon-pos="down">
+                            <img src="assets/icons/cod.png">
+                            <img src="assets/icons/fishing_rod.png">
+                        </span>
+                    </div>
                 </div>
-                <div class="player">
-                    <p>Gougou</p>
-                    <span aria-label="Wolf Miner" data-balloon-pos="down">
-                    <img src="assets/icons/bone.png">
-                    <img src="assets/icons/iron_pickaxe.png">
-                    </span>
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="player">
+                        <p>Gougou</p>
+                        <span aria-label="Wolf Miner" data-balloon-pos="down">
+                            <img src="assets/icons/bone.png">
+                            <img src="assets/icons/iron_pickaxe.png">
+                        </span>
+                    </div>
                 </div>
             </div>
             <hr>
-            <p class="title t-n is-5">Liste des origines :</p>
+            <p class="title t-n is-5 c" @click="origins = !origins"><span v-if="origins">-</span><span v-else>+</span> Liste des origines</p>
+            <div v-if="origins">
                 <div class="origin">
                     <span>
                         <img src="assets/icons/ender_pearl.png">
@@ -108,7 +123,7 @@
                     </span>
                     <ul>
                         <li class="good">[+] <strong>Active (avec cooldown) :</strong> peut se propulser dans les airs</li>
-                        <li class="good">[+] Possède  des Elytras par défaut</li>
+                        <li class="good">[+] Possède des Elytras par défaut</li>
                         <li class="good">[+] Inflige deux fois plus de dégâts lors d’un vol en elytra</li>
                         <li class="bad">[-] Prends deux fois plus de dégats de chute</li>
                         <li class="bad">[-] Ne peut porter que des armures légères</li>
@@ -300,8 +315,10 @@
                         <li class="bad">[-] N'aime pas être exposé à la nuit</li>
                     </ul>
                 </div>
+            </div>
             <hr>
-            <p class="title t-n is-5">Liste des classes :</p>
+            <p class="title t-n is-5 c" @click="classes = !classes"><span v-if="classes">-</span><span v-else>+</span> Liste des classes</p>
+            <div v-if="classes">
                 <div class="origin">
                     <span>
                         <img src="assets/icons/wheat.png">
@@ -443,8 +460,12 @@
                         <li>[+] Les animaux adoptés proches obtiennent les effets des potions bues</li>
                     </ul>
                 </div>
+            </div>
         </div>
     </section>
 
 
-</body></html>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="js/index.js"></script></html>
