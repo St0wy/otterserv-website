@@ -84,7 +84,9 @@ var game = new Vue({
                 axios.get('https://otterserv.eu/stats/'+player.uuid+'.json')
                      .then((response)=> {
                     let strData = response.data.toString();
+                    console.log(strData);
                     strData = strData.replaceAll("minecraft:","");
+                    console.log(strData);
                     player.data= JSON.parse(strData);
                 })
             }
