@@ -39,6 +39,11 @@ var game = new Vue({
                 origin: "wolf",
                 class: "miner",
                 data: {}
+            }, {
+                name:"Eli0s_",
+                origin: "fox",
+                class: "cook",
+                data: {}
             },
         ]
     },
