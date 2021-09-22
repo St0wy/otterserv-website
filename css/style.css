@@ -52,37 +52,143 @@ strong{
     color: #F4F4F4 !important;
 }
 
-.event{ 
-    background-color: #313342;
-    padding: 5px 10px 5px 10px;
-    border-radius: 2.5px;
-}
-
-.player{
-    width: 100%;
-    line-height: 16px;
-    background-color: #313342;
-    padding: 5px 10px 5px 10px;
-    border-radius: 2.5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.origin{
+.block{
     background-color: #313342;
     padding: 5px 10px 5px 10px;
     border-radius: 2.5px;
     margin-bottom: 10px;
 }
 
-.origin span{
+.player{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px;
 }
 
-.origin .title{
-    margin-left: 10px;
+.player span{
+    display: flex;
+}
+
+.origin, .class{
+    height: 32px;
+    width: 32px;
+}
+
+.origin.enderian{
+    background-image: url(../assets/icons/ender_pearl.png);
+}
+
+.origin.elytrian{
+    background-image: url(../assets/icons/elytra.png);
+}
+
+.origin.arachnid{
+    background-image: url(../assets/icons/spider_eye.png);
+}
+
+.origin.merling{
+    background-image: url(../assets/icons/cod.png);
+}
+
+.origin.blazeborn{
+    background-image: url(../assets/icons/blaze_powder.png);
+}
+
+.origin.shulk{
+    background-image: url(../assets/icons/shulker_shell.png);
+}
+
+.origin.phantom{
+    background-image: url(../assets/icons/phantom_membrane.png);
+}
+
+.origin.avian{
+    background-image: url(../assets/icons/feather.png);
+}
+
+.origin.feline{
+    background-image: url(../assets/icons/string.png);
+}
+
+.origin.fox{
+    background-image: url(../assets/icons/sweet_berries.png);
+}
+
+.origin.strider{
+    background-image: url(../assets/icons/warped_fungus_on_a_stick.png);
+}
+
+.origin.ghast{
+    background-image: url(../assets/icons/ghast_tear.png);
+}
+
+.origin.wolf{
+    background-image: url(../assets/icons/bone.png);
+}
+
+.origin.piglim{
+    background-image: url(../assets/icons/gold_ingot.png);
+}
+
+.origin.apian{
+    background-image: url(../assets/icons/honeycomb.png);
+}
+
+.class.farmer{
+    background-image: url(../assets/icons/wheat.png);
+}
+
+.class.rancher{
+    background-image: url(../assets/icons/lead.png);
+}
+
+.class.miner{
+    background-image: url(../assets/icons/iron_pickaxe.png);
+}
+
+.class.lumberjack{
+    background-image: url(../assets/icons/iron_axe.png);
+}
+
+.class.cook{
+    background-image: url(../assets/icons/suspicious_stew.png);
+}
+
+.class.blacksmith{
+    background-image: url(../assets/icons/iron_ingot.png);
+}
+
+.class.cleric{
+    background-image: url(../assets/icons/experience_bottle.png);
+}
+
+.class.merchant{
+    background-image: url(../assets/icons/emerald.png);
+}
+
+.class.explorer{
+    background-image: url(../assets/icons/compass_02.png);
+}
+
+.class.warrior{
+    background-image: url(../assets/icons/iron_sword.png);
+}
+
+.class.fisherman{
+    background-image: url(../assets/icons/fishing_rod.png);
+}
+
+.class.archer{
+    background-image: url(../assets/icons/bow_pulling_1.png);
+}
+
+.class.rogue{
+    background-image: url(../assets/icons/leather.png);
+}
+
+.class.beastmaster{
+    background-image: url(../assets/icons/bone.png);
 }
 
 hr{

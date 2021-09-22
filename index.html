@@ -38,63 +38,75 @@
             <p class="title t-n is-5 c" @click="players = !players"><span v-if="players">-</span><span v-else>+</span> Liste des joueurs</p>
             <div class="columns is-multiline" v-if="players">
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>Exylo</p>
-                        <span aria-label="Apian Lumberjack" data-balloon-pos="down">
-                            <img src="assets/icons/honeycomb.png">
-                            <img src="assets/icons/iron_axe.png">
+                        <span>
+                            <div class="origin apian">
+                            </div>
+                            <div class="class lumberjack">
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>Stowy_</p>
-                        <span aria-label="Wolf Blacksmith" data-balloon-pos="down">
-                            <img src="assets/icons/bone.png">
-                            <img src="assets/icons/iron_ingot.png">
+                        <span>
+                            <div class="origin wolf">
+                            </div>
+                            <div class="class miner">
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>MoiLePseudo</p>
-                        <span aria-label="Avian Fisherman" data-balloon-pos="down">
-                            <img src="assets/icons/feather.png">
-                            <img src="assets/icons/fishing_rod.png">
+                        <span>
+                            <div class="origin avian">
+                            </div>
+                            <div class="class fisherman">
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>Roxaasora</p>
-                        <span aria-label="Elytrian Cook" data-balloon-pos="down">
-                            <img src="assets/icons/elytra.png">
-                            <img src="assets/icons/suspicious_stew.png">
+                        <span>
+                            <div class="origin elytrian">
+                            </div>
+                            <div class="class cook">
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>Swordyn</p>
-                        <span aria-label="Enderian Merchant" data-balloon-pos="down">
-                            <img src="assets/icons/ender_pearl.png">
-                            <img src="assets/icons/emerald.png">
+                        <span>
+                            <div class="origin enderian">
+                            </div>
+                            <div class="class merchant">
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>Krakao76</p>
-                        <span aria-label="Merling Fisherman" data-balloon-pos="down">
-                            <img src="assets/icons/cod.png">
-                            <img src="assets/icons/fishing_rod.png">
+                        <span>
+                            <div class="origin merling">
+                            </div>
+                            <div class="class fisherman">
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="player">
+                    <div class="block player">
                         <p>Gougou</p>
-                        <span aria-label="Wolf Miner" data-balloon-pos="down">
+                        <span>
                             <img src="assets/icons/bone.png">
                             <img src="assets/icons/iron_pickaxe.png">
                         </span>
@@ -104,7 +116,7 @@
             <hr>
             <p class="title t-n is-5 c" @click="origins = !origins"><span v-if="origins">-</span><span v-else>+</span> Liste des origines</p>
             <div v-if="origins">
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/ender_pearl.png">
                         <p class="title t-n is-6">Enderian</p>
@@ -116,7 +128,7 @@
                         <li class="bad">[-] Ne voit pas les joueurs qui portent des citrouilles sur la tête</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/elytra.png">
                         <p class="title t-n is-6">Elytrian</p>
@@ -130,7 +142,7 @@
                         <li class="bad">[-] N'aime pas être enfermé dans des pièces a faible hauteur sous plafond trop longtemps</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/spider_eye.png">
                         <p class="title t-n is-6">Arachnid</p>
@@ -142,7 +154,7 @@
                         <li class="bad">[-] Possède 7 coeurs</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/cod.png">
                         <p class="title t-n is-6">Merling</p>
@@ -156,7 +168,7 @@
                         <li class="bad">[-] Ne respire pas hors de l’eau sans aide d’enchantements ou sans boire des bouteilles d’eau</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/blaze_powder.png">
                         <p class="title t-n is-6">Blazeborn</p>
@@ -169,7 +181,7 @@
                         <li class="bad">[-] Prend des dégâts au contact de l'eau</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/shulker_shell.png">
                         <p class="title t-n is-6">Shulk</p>
@@ -182,7 +194,7 @@
                         <li class="bad">[-] Ne peut pas utiliser de bouclier</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/phantom_membrane.png">
                         <p class="title t-n is-6">Phantom</p>
@@ -194,7 +206,7 @@
                         <li class="bad">[-] Doit manger plus que la normale</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/feather.png">
                         <p class="title t-n is-6">Avian</p>
@@ -206,7 +218,7 @@
                         <li class="bad">[-] Ne peut dormir qu'en hauteur</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/string.png">
                         <p class="title t-n is-6">Feline</p>
@@ -220,7 +232,7 @@
                         <li class="bad">[-] Ne peut pas miner si le bloc de pierre est au contact de deux autres blocs de pierre (Minerais compris)</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/sweet_berries.png">
                         <p class="title t-n is-6">Fox</p>
@@ -240,7 +252,7 @@
                         <li class="bad">[-] Doit manger plus que la normale</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/warped_fungus_on_a_stick.png">
                         <p class="title t-n is-6">Strider</p>
@@ -255,7 +267,7 @@
                         <li class="bad">[-] Prend des dégâts au contact de l'eau</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/ghast_tear.png">
                         <p class="title t-n is-6">Ghast</p>
@@ -273,7 +285,7 @@
                         <li class="bad">[-] Ne peut pas dormir</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/bone.png">
                         <p class="title t-n is-6">Wolf</p>
@@ -290,7 +302,7 @@
                         <li class="bad">[-] Doit manger plus que la normale</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/gold_ingot.png">
                         <p class="title t-n is-6">Piglim Rogue</p>
@@ -302,7 +314,7 @@
                         <li class="good">[+] Fait plus de dégats avec des spectral arrows</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/honeycomb.png">
                         <p class="title t-n is-6">Apian</p>
@@ -319,7 +331,7 @@
             <hr>
             <p class="title t-n is-5 c" @click="classes = !classes"><span v-if="classes">-</span><span v-else>+</span> Liste des classes</p>
             <div v-if="classes">
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/wheat.png">
                         <p class="title t-n is-6">Farmer</p>
@@ -329,7 +341,7 @@
                         <li>[+] La bone meal est deux fois efficace</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/lead.png">
                         <p class="title t-n is-6">Rancher</p>
@@ -339,7 +351,7 @@
                         <li>[+] Reçoit plus d'items en tuant des animaux</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/iron_pickaxe.png">
                         <p class="title t-n is-6">Miner</p>
@@ -349,7 +361,7 @@
                         <li>[+] Ne se fatigue pas en minant</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/iron_axe.png">
                         <p class="title t-n is-6">Lumberjack</p>
@@ -359,7 +371,7 @@
                         <li>[+] A une chance de doubler les planches de bois craftées à partir d'une bûche</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/suspicious_stew.png">
                         <p class="title t-n is-6">Cook</p>
@@ -369,17 +381,17 @@
                         <li>[+] Obtient plus d'expèrience en cuisant de la nourriture dans un smoker</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/iron_ingot.png">
                         <p class="title t-n is-6">Blacksmith</p>
                     </span>
                     <ul>
-                        <li>[+] Crafter des équipement leur donne un petit bonus</li>
+                        <li>[+] Crafter des équipements leur donne un petit bonus</li>
                         <li>[+] Réparer un équipement coute moins de matériaux</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/experience_bottle.png">
                         <p class="title t-n is-6">Cleric</p>
@@ -389,7 +401,7 @@
                         <li>[+] Obtient de meilleurs enchantements</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/emerald.png">
                         <p class="title t-n is-6">Merchant</p>
@@ -399,7 +411,7 @@
                         <li>[+] Les Wandering Traders offrent plus d'items rares</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/compass_02.png">
                         <p class="title t-n is-6">Explorer</p>
@@ -409,7 +421,7 @@
                         <li>[+] Ne s'épuise pas en courant</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/iron_sword.png">
                         <p class="title t-n is-6">Warrior</p>
@@ -419,7 +431,7 @@
                         <li>[+] Est moins lent en utilisant un shield</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/fishing_rod.png">
                         <p class="title t-n is-6">Fisherman</p>
@@ -430,27 +442,27 @@
                         <li>[+] Pêche deux poissons au lieux d'un</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/bow_pulling_1.png">
                         <p class="title t-n is-6">Archer</p>
                     </span>
                     <ul>
-                        <li>[+] Tout les projectiles sont plus précis</li>
+                        <li>[+] Tous les projectiles sont plus précis</li>
                         <li>[+] Est moins lent en utilisant un arc</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/leather.png">
                         <p class="title t-n is-6">Rogue</p>
                     </span>
                     <ul>
                         <li>[+] Le pseudo ne s'affiche pas au travers des murs</li>
-                        <li>[+] Après être accroupi pendant 10s, fait moins de bruit et fait plus de dégats en attaquand par derrière</li>
+                        <li>[+] Après s'être accroupi pendant 10s, fait moins de bruit et fait plus de dégats en attaquant par derrière</li>
                     </ul>
                 </div>
-                <div class="origin">
+                <div class="block">
                     <span>
                         <img src="assets/icons/bone.png">
                         <p class="title t-n is-6">Beastmaster</p>
