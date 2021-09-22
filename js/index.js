@@ -78,10 +78,8 @@ var game = new Vue({
        }
     },
     mounted(){
-        console.log(this.users)
         for (let i = 0; i < this.users.length; i++){
         let player = this.users[i];
-        console.log(player);
             if(player.logged){
                 axios.get('https://otterserv.eu/stats/'+player.uuid+'.json')
                      .then((response)=> {
