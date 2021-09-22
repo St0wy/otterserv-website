@@ -21,7 +21,7 @@ var game = new Vue({
             }, {
                 name:"MoiLePseudo",
                 origin: "avian",
-                class: "fisherman",
+                class: "farmer",
                 uuid:"1038ea49-8b8a-4392-8801-e746df031c8d",
                 logged:true,
                 data: {}
@@ -79,6 +79,13 @@ var game = new Vue({
                 origin: "Shulk",
                 class: "lumberjack",
                 uuid:"d7656ed1-dee6-4454-84c5-b57d355f1391",
+                logged:true,
+                data: {}
+            }, {
+                name:"FykaZz_",
+                origin: "Shulk",
+                class: "miner",
+                uuid:"776b2d8a-a506-4e76-94ed-a73617eceb79",
                 logged:true,
                 data: {}
             },
