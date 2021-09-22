@@ -23,7 +23,7 @@ var game = new Vue({
                 origin: "avian",
                 class: "fisherman",
                 uuid:"1038ea49-8b8a-4392-8801-e746df031c8d",
-                logged:false,
+                logged:true,
                 data: {}
             }, {
                 name:"Roxaasora",
@@ -62,16 +62,23 @@ var game = new Vue({
                 data: {}
             }, {
                 name:"Kyo_Ashigi",
-                origin: "blaze",
+                origin: "blazeborn",
                 class: "blacksmith",
                 uuid:"3532b37f-ee03-4ec1-b3f6-9f823b559210",
                 logged:true,
                 data: {}
             }, {
                 name:"Vanguard____",
-                origin: "blaze",
+                origin: "blazeborn",
                 class: "miner",
                 uuid:"ecafd402-6d1e-465a-b706-4795f9e50677",
+                logged:true,
+                data: {}
+            }, {
+                name:"Xariien",
+                origin: "Shulk",
+                class: "lumberjack",
+                uuid:"d7656ed1-dee6-4454-84c5-b57d355f1391",
                 logged:true,
                 data: {}
             },
