@@ -30,86 +30,20 @@
     </section>
     <section class="section" id="view">
         <div class="container dm-b">
-            <div class="event">
+            <div class="block">
                 <p class="title t-n is-5">Prochain evenement</p>
                 <p>Lancement du serveur mercredi 21 septembre à <strong>21h</strong>!</p>
             </div>
             <hr>
             <p class="title t-n is-5 c" @click="players = !players"><span v-if="players">-</span><span v-else>+</span> Liste des joueurs</p>
-            <div class="columns is-multiline" v-if="players">
-                <div class="column is-half-tablet is-one-quarter-desktop">
+            <div class="columns is-multiline">
+                <div class="column is-half-tablet is-one-quarter-desktop" v-for="player of users" v-if="players">
                     <div class="block player">
-                        <p>Exylo</p>
+                        <p>{{player.name}}</p>
                         <span>
-                            <div class="origin" v-bind:class="users.exylo.origin">
+                            <div class="origin" v-bind:class="player.origin">
                             </div>
-                            <div class="class" v-bind:class="users.exylo.class">
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="block player">
-                        <p>Stowy_</p>
-                        <span>
-                            <div class="origin" v-bind:class="users.stowy.origin">
-                            </div>
-                            <div class="class" v-bind:class="users.stowy.class">
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="block player">
-                        <p>MoiLePseudo</p>
-                        <span>
-                            <div class="origin" v-bind:class="users.moilepseudo.origin">
-                            </div>
-                            <div class="class" v-bind:class="users.moilepseudo.class">
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="block player">
-                        <p>Roxaasora</p>
-                        <span>
-                            <div class="origin" v-bind:class="users.roxaasora.origin">
-                            </div>
-                            <div class="class" v-bind:class="users.roxaasora.class">
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="block player">
-                        <p>Swordyn</p>
-                        <span>
-                            <div class="origin" v-bind:class="users.swordyn.origin">
-                            </div>
-                            <div class="class" v-bind:class="users.swordyn.class">
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="block player">
-                        <p>Krakao76</p>
-                        <span>
-                            <div class="origin" v-bind:class="users.krakao.origin">
-                            </div>
-                            <div class="class" v-bind:class="users.krakao.class">
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="column is-half-tablet is-one-quarter-desktop">
-                    <div class="block player">
-                        <p>Gougou</p>
-                        <span>
-                            <div class="origin" v-bind:class="users.gougou.origin">
-                            </div>
-                            <div class="class" v-bind:class="users.gougou.class">
+                            <div class="class" v-bind:class="player.class">
                             </div>
                         </span>
                     </div>
