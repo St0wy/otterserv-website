@@ -83,7 +83,7 @@ var game = new Vue({
             if(player.logged){
                 axios.get('https://otterserv.eu/stats/'+player.uuid+'.json')
                      .then((response)=> {
-                    let strdata = response.data.toString.replaceAll("minecraft:","");
+                    let strdata = response.data.toString().replaceAll("minecraft:","");
                     player.data= JSON.parse(strdata);
                 })
             }
