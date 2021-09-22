@@ -37,28 +37,42 @@ var game = new Vue({
                 origin: "enderian",
                 class: "merchant",
                 uuid:"c152a660-21e6-458a-b79b-6a9cdd1403f2",
-                logged:false,
+                logged:true,
                 data: {}
             }, {
                 name:"Krakao76",
                 origin: "merling",
                 class: "fisherman",
                 uuid:"addc6468-d97c-40fe-8f44-26907c673e66",
-                logged:false,
+                logged:true,
                 data: {}
             }, {
-                name:"Gougou",
+                name:"G0U_G0U",
                 origin: "wolf",
                 class: "miner",
-                uuid:"",
-                logged:false,
+                uuid:"8c8b4d2f-0178-4a27-9719-3d1dc0a3da48",
+                logged:true,
                 data: {}
             }, {
                 name:"Eli0s_",
                 origin: "fox",
                 class: "cook",
                 uuid:"2268e844-5772-48c7-a903-6026598e09f5",
-                logged:false,
+                logged:true,
+                data: {}
+            }, {
+                name:"Kyo_Ashigi",
+                origin: "blaze",
+                class: "blacksmith",
+                uuid:"3532b37f-ee03-4ec1-b3f6-9f823b559210",
+                logged:true,
+                data: {}
+            }, {
+                name:"Vanguard____",
+                origin: "blaze",
+                class: "miner",
+                uuid:"ecafd402-6d1e-465a-b706-4795f9e50677",
+                logged:true,
                 data: {}
             },
         ]
