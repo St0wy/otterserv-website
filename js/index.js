@@ -88,6 +88,13 @@ var game = new Vue({
                 uuid:"776b2d8a-a506-4e76-94ed-a73617eceb79",
                 logged:true,
                 data: {}
+            }, {
+                name:"Mathizza",
+                origin: "enderian",
+                class: "lumberjack",
+                uuid:"6e7ca6e7-9948-46b3-9050-9b29f5b919da",
+                logged:true,
+                data: {}
             },
         ]
     },
