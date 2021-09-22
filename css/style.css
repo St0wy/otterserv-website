@@ -22,6 +22,10 @@ html {
     background-color: #262833;
 }
 
+p{
+    font-size: 13px;
+}
+
 body {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -201,4 +205,19 @@ li.bad{
 
 li.good{
     color: hsl(171, 100%, 41%);
+}
+
+.dynmap{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 2.5px;
+    margin-bottom: 10px;
+    background-color: hsl(171, 100%, 41%);
+}
+
+.dynmap:hover{
+    opacity: .7;
+    color: white;
 }

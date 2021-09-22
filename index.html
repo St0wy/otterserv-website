@@ -30,22 +30,33 @@
     </section>
     <section class="section" id="view">
         <div class="container dm-b">
-            <div class="block">
-                <p class="title t-n is-5">Prochain evenement</p>
-                <p>Lancement du serveur mercredi 22 septembre à <strong>21h</strong>!</p>
+            <div class="columns is-mobile is-vcentered">
+                <div class="column is-8">
+                    <div class="block">
+                        <p class="title t-n is-5">Prochain evenement</p>
+                        <p>Lancement du serveur mercredi 22 septembre à <strong>21h</strong>!   </p>
+                    </div>
+                </div>
+                <div class="column is-4 flex-grow">
+                    <a class="-b dynmap" href="http://otterserv.eu:8123/" target="_blank">Dynmap</a>
+                </div>
             </div>
             <hr>
             <p class="title t-n is-5 c" @click="players = !players"><span v-if="players">-</span><span v-else>+</span> Liste des joueurs</p>
             <div class="columns is-multiline">
                 <div class="column is-half-tablet is-one-quarter-desktop" v-for="player of users" v-if="players">
-                    <div class="block player">
-                        <p>{{player.name}}</p>
+                    <div class="block">
+                        <div class="player">
+                        <p class="title t-n is-6 nm">{{player.name}}</p>
                         <span>
                             <div class="origin" v-bind:class="player.origin">
                             </div>
                             <div class="class" v-bind:class="player.class">
                             </div>
                         </span>
+                        </div>
+                        <p>Temps de jeu : {{player.data}}</p>
+                        <p>Nombre de morts :</p>
                     </div>
                 </div>
             </div>
@@ -415,5 +426,7 @@
 
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script></html>
