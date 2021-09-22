@@ -13,7 +13,7 @@ var game = new Vue({
                 data: {}
             }, {
                 name:"Stowy_",
-                origin: "wolf",
+                origin: "piglim",
                 class: "blacksmith",
                 uuid:"b4498d9c-5399-480f-bd8b-3f6c8bf52fb6",
                 logged:true,
