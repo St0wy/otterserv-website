@@ -85,7 +85,7 @@ var game = new Vue({
                      .then((response)=> {
                     let strData = JSON.stringify(response.data);
                     console.log(strData);
-                    strData = strData.replaceAll("minecraft:","");
+                    strData = strData.replaceAll("minecraft:","minecraft_");
                     console.log(strData);
                     player.data= JSON.parse(strData);
                 })
