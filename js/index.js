@@ -84,7 +84,6 @@ var game = new Vue({
                 axios.get('https://otterserv.eu/stats/'+player.uuid+'.json')
                      .then((response)=> {
                     player.data=response.data;
-                    console.log(response.data);
                 })
             }
         }
