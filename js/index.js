@@ -76,14 +76,14 @@ var game = new Vue({
                 data: {}
             }, {
                 name:"Xariien",
-                origin: "Shulk",
+                origin: "shulk",
                 class: "lumberjack",
                 uuid:"d7656ed1-dee6-4454-84c5-b57d355f1391",
                 logged:true,
                 data: {}
             }, {
                 name:"FykaZz_",
-                origin: "Shulk",
+                origin: "shulk",
                 class: "miner",
                 uuid:"776b2d8a-a506-4e76-94ed-a73617eceb79",
                 logged:true,
