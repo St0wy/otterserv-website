@@ -55,8 +55,10 @@
                             </div>
                         </span>
                         </div>
-                        <p>Temps de jeu : {{player.data.stats.minecraft_custom.minecraft_play_time}}</p>
-                        <p>Nombre de morts : {{player.data.stats.minecraft_custom.minecraft_deaths}}</p>
+                        <span v-if="player.logged">
+                            <p>Temps de jeu : {{player.data.stats.minecraft_custom.minecraft_play_time}}</p>
+                            <p>Nombre de morts : {{player.data.stats.minecraft_custom.minecraft_deaths}}</p>
+                        </span>
                     </div>
                 </div>
             </div>
