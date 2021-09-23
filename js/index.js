@@ -30,7 +30,7 @@ var game = new Vue({
                 origin: "elytrian",
                 class: "cook",
                 uuid:"8d2857e0-5eb0-4ce0-a5b5-f7e9e07902ba",
-                logged:false,
+                logged:true,
                 data: {}
             }, {
                 name:"Swordyn",
