@@ -30,18 +30,6 @@
     </section>
     <section class="section" id="view">
         <div class="container dm-b">
-            <div class="columns is-mobile is-vcentered">
-                <div class="column is-8">
-                    <div class="block">
-                        <p class="title t-n is-5">Prochain evenement</p>
-                        <p>Lancement du serveur mercredi 22 septembre à <strong>21h</strong>!   </p>
-                    </div>
-                </div>
-                <div class="column is-4 flex-grow">
-                    <a class="-b dynmap" href="http://otterserv.eu:8123/" target="_blank">Dynmap</a>
-                </div>
-            </div>
-            <hr>
             <p class="title t-n is-5 c" @click="players = !players"><span v-if="players">-</span><span v-else>+</span> Liste des joueurs</p>
             <div class="columns is-multiline">
                 <div class="column is-half-tablet is-one-quarter-desktop" v-for="player of users">
