@@ -1,21 +1,18 @@
 <template>
-  <banner />
-  <content />
+  <Banner />
+  <Content />
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
+<script>
 import Banner from "./components/Banner.vue";
 import Content from "./components/Content.vue";
-// import HelloWorld from "./components/HelloWorld.vue";
 
-@Options({
+export default {
   components: {
     Banner,
     Content,
   },
-})
-export default class App extends Vue {}
+}
 </script>
 
 <style>

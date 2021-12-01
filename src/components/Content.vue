@@ -6,14 +6,12 @@
   </section>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
+<script>
 import PlayersList from "./PlayersList.vue";
 
-@Options({
+export default {
   components: {
     PlayersList,
   },
-})
-export default class Banner extends Vue {}
+}
 </script>

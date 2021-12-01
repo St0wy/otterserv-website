@@ -7,15 +7,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-
-@Options({
-  components: {},
-})
-export default class Banner extends Vue {}
-</script>
-
 <style scoped>
 .hero.is-banner {
   background-image: url(../assets/newbg.png);

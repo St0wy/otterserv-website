@@ -1,16 +1,14 @@
 <template>
   <p class="title t-n is-5">Liste des joueurs</p>
   <div class="columns is-multiline">
-    <player v-for="uuid in uuids" v-bind:key="uuid" v-bind:uuid="uuid">
-    </player>
+    <player v-for="uuid in uuids" v-bind:key="uuid" v-bind:uuid="uuid"></player>
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
+<script>
 import Player from "./Player.vue";
 
-@Options({
+export default {
   components: {
     Player,
   },
@@ -36,7 +34,5 @@ import Player from "./Player.vue";
     };
   },
   props: {},
-  // mounted() {},
-})
-export default class Banner extends Vue {}
+}
 </script>

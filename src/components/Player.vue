@@ -2,10 +2,9 @@
   <div class="column is-half-tablet is-one-quarter-desktop">
     <div class="block">
       <div class="player">
-        <p class="title t-n is-6 nm" v-if="playerData != null">
-          {{ playerData.name }}
-        </p>
+        <p class="title t-n is-6 nm" v-if="playerData">{{ playerData.name }}</p>
       </div>
+      <!-- <pre>{{ counter }}</pre> -->
       <span>
         <p>
           Temps de jeu :
@@ -22,37 +21,35 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import axios from "axios";
+<script>
+import { toRefs } from "vue";
+import useSWRV from "swrv";
 
-@Options({
-  data() {
-    return {
-      playerData: null,
-    };
-  },
-  components: {},
+const API_URL =
+  "http://webproxy.stowy.ch/?url=https://sessionserver.mojang.com/session/minecraft/profile/";
+
+const fetcher = function (url) {
+  return fetch(url).then(r => r.json())
+}
+
+export default {
+  ts: {},
   props: {
-    uuid: String,
-  },
-  methods: {
-    getPlayerData() {
-      axios
-        .get(
-          "http://webproxy.stowy.ch/?url=https://sessionserver.mojang.com/session/minecraft/profile/" +
-            this.uuid
-        )
-        .then((response) => (this.playerData = response.data));
+    uuid: {
+      type: String,
+      required: true,
     },
   },
-  mounted() {
-    this.getPlayerData();
+  // methods: {},
+  // mounted() {},
+  setup(props) {
+    const { uuid } = toRefs(props);
+    const link = API_URL + uuid.value;
+    console.log(link);
+    const { data: playerData, error } = useSWRV(link, fetcher);
+    return { playerData, error };
   },
-})
-export default class Banner extends Vue {
-  uuid!: string;
-}
+};
 </script>
 
 <style scoped>
